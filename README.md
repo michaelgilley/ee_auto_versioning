@@ -2,7 +2,11 @@
 
 This extension comes in handy for better cache control with your EE assets.
 
-## Explanation
+## Version 0.1
+
+* Requires: ExpressionEngine 2.4+
+
+## Description
 
 To speed up our websites we should be using Expires headers on our static files. Leveraging browser caching has many
 benefits to it including frontend speed increases, lower bandwidth, and server processing usage. This is especially
