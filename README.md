@@ -13,9 +13,9 @@ To fix this issue it's best to place a cache buster on the filename in your mark
 this. One, and arguably the most widely used, is with append the filename with a query string such as: `main.css?1234`.
 The other is to modify the filename itself like so: `main.1234.css`. The previous method is commonly chosen because it's
 the simplest to maintain and requires very little to no extra server configuration. However, as Steve Souders found out
-it's not the best method becuase many proxy services like (Squid)[http://www.squid-cache.org/] ignore query strings on
+it's not the best method becuase many proxy services like [Squid](http://www.squid-cache.org/) ignore query strings on
 filenames in their cacheing schema. Therefore, it's best to modify the filename itself and that's what this small 
-extension does in (ExpressionEngine)[http://ellislab.com/expressionengine].
+extension does in [ExpressionEngine](http://ellislab.com/expressionengine).
 
 ## Caveats
 
