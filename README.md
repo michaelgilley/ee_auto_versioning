@@ -30,10 +30,12 @@ The extension also owes a lot to [Kevin Hale](http://goo.gl/I1n3T).
 Implementation of this extension makes the assumption that you are running EE2.4+ and that you are using at least some form
 of the Apache Module Expires on your static content. This can easily be done in your `.htaccess` file like:
 
-    <FilesMatch "\.(gif|jpe?g|js|css)$">
-      ExpiresActive On
-      ExpiresDefault "access plus 10 years"
-    </FilesMatch>
+```apache
+<FilesMatch "\.(gif|jpe?g|js|css)$">
+  ExpiresActive On
+  ExpiresDefault "access plus 10 years"
+</FilesMatch>
+```
 
 ## Installation
 
