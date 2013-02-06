@@ -46,15 +46,9 @@ of the Apache Module Expires on your static content. This can easily be done in 
 ```apache
 #Rules for Versioned Static Files
 <IfModule mod_rewrite.c>
- RewriteRule (.+)\.(\d+)\.(js|css)$ $1.$3 [L]
-</IfModule>
-```
-
-This rule is specifically for use with css and js files. If you wanted to use this with images use the following:
-
-```apache
-<IfModule mod_rewrite.c>
-  RewriteRule (.+)\.(\d+)\.(js|css|gif|png|jpe?g)$ $1.$3 [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.+)\.(\d+)\.(js|css|png|jpg|gif)$ $1.$3 [L]
 </IfModule>
 ```
 
